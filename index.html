@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumo API ViaCEP</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="center">
+      <h1>Consumo API ViaCEP</h1>
+      <hr>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-6">
+        <label for="nome">Como você se chama?</label>
+        <input type="text" id="nome" ng-model="nomePessoa" placeholder="Digite seu nome" class="form-control"><br>
+        <label for="cep">Qual é o seu CEP? </label><small> (sem pontos ou traços)</small>
+        <input name="cep" placeholder="Digite seu CEP" id="cep" type="text" class="form-control" value="" size="10"
+          required maxlength="9" onblur="pesquisacep(this.value);"><br>
+        <button id="buscarCEP" class="btn btn-default">Buscar CEP</button>
+      </div>
+      <div class="col-6">
+        <div class="dadosAPI">
+          <label>Rua:
+            <input name="rua" type="text" id="rua" size="60" class="form-control" disabled></label>
+          <label>Bairro:
+            <input name="bairro" type="text" id="bairro" size="40" class="form-control" disabled></label>
+          <label>Cidade:
+            <input name="cidade" type="text" id="cidade" size="40" class="form-control" disabled></label>
+          <div class="uf">
+            <label>Estado:
+              <input name="uf" type="text" id="uf" size="2" class="form-control" disabled></label>
+          </div>
+          <label>IBGE:
+            <input name="ibge" type="text" id="ibge" size="8" class="form-control" disabled></label><br><br>
+          <h6>Retorno em JSON</h6>
+        </div>
+        <div class="dadosJSON">
+          <blockquote id="cepJSON">...</blockquote>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>

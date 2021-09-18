@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap");
+
+body {
+  background-color: #1e1e1e;
+  color: #e2e2e2;
+  font-family: "Epilogue", sans-serif;
+}
+
+html {
+  font-size: 95%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+hr {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+a {
+  color: #bb86fc;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+  color: #bb86fc;
+}
+
+.container {
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+.btn-default {
+  width: 100%;
+  background-color: #bb86fc;
+  box-shadow: none;
+}
+
+.btn-default:hover {
+  background-color: #bb86fc;
+}
+
+.dadosAPI {
+  margin-top: 2rem;
+}
+
+.dadosAPI input {
+  color: #bb86fc;
+  padding-left: 0;
+}
+
+.dadosJSON {
+  padding: 1rem;
+  background-color: #121212;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  overflow: auto;
+}
+
+.form-control {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #bb86fc;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #bb86fc;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control:disabled {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #bb86fc;
+  border-radius: 0;
+  margin-bottom: 0.5rem;
+}
+
+.uf {
+  display: inline-block;
+  margin-left: 2rem;
+  float: right;
+}
