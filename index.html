@@ -14,26 +14,41 @@
 
   <div class="container">
     <div class="center">
-      <h1>Consumo API ViaCEP</h1>
+      <h1>Formulário consumindo API ViaCEP</h1>
       <hr>
     </div>
     <br>
     <div class="row">
       <div class="col-6">
-        <!-- <form action=""> -->
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Ex: Matheus Costa dos Santos" class="form-control"><br>
-        <label for="nome">CPF</label>
-        <input type="text" id="nome" placeholder="Ex: 460.XXX.XXX-30" class="form-control"><br>
-        <label for="nome">Telefone</label>
-        <input type="text" id="nome" placeholder="Ex: (17) 3238-XXXX" class="form-control"><br>
-        <label for="nome">Celular/Whatsapp</label>
-        <input type="text" id="nome" placeholder="Ex: (17) 99214-3072" class="form-control"><br>
-        <label for="cep">Digite o CEP</label><small class="pl-1">(sem pontos ou traços)</small>
-        <input name="cep" placeholder="Ex: 15081520" id="cep" type="text" class="form-control" value="" size="10"
-          required maxlength="9" onblur="pesquisacep(this.value);"><br>
-        <!-- </form> -->
+        <div class="col-12">
+          <div class="row">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Ex: Matheus Costa dos Santos" class="form-control">
+          </div>
+          <br>
+          <div class="row">
+            <label for="nome">CPF</label>
+            <input type="text" id="nome" placeholder="Ex: 460.XXX.XXX-30" class="form-control">
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-6 p-0">
+              <label for="nome">Telefone</label>
+              <input type="text" id="nome" placeholder="Ex: (17) 3238-XXXX" class="form-control">
+            </div>
+            <div class="col-6 pr-0">
+              <label for="nome">Celular/Whats-app</label>
+              <input type="text" id="nome" placeholder="Ex: (17) 99214-3072" class="form-control"><br>
+            </div>
+          </div>
+          <div class="row">
+            <label for="cep">Digite o CEP</label><small class="pl-1">(sem pontos ou traços)</small>
+            <input name="cep" placeholder="Ex: 15081520" id="cep" type="text" class="form-control" value="" size="10"
+              required maxlength="9" onblur="pesquisacep(this.value);">
+          </div>
+        </div>
       </div>
+
       <div class="col-6">
         <div class="dadosAPI">
           <div class="col-12">
@@ -60,11 +75,12 @@
             <div class="row">
               <div class="col-8 p-0">
                 <label>Complemento:</label>
-                <input name="complemento" type="text" id="complemento" size="40" class="form-control pl-2"><br>
+                <input name="complemento" placeholder="Ex: Residencial Santa Regina" type="text" id="complemento"
+                  size="40" class="form-control pl-2"><br>
               </div>
               <div class="col-4 pr-0">
                 <label>Número:</label>
-                <input name="num" type="number" id="num" class="form-control pl-2">
+                <input name="num" placeholder="Ex: 500" type="number" id="num" class="form-control pl-2">
               </div>
             </div>
 
@@ -72,6 +88,9 @@
         </div>
       </div>
     </div>
+
+    <hr>
+    <br>
 
     <div class="col-12">
       <div class="row">

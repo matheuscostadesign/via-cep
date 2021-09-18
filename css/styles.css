@@ -50,16 +50,6 @@ a {
   padding-left: 0;
 }
 
-.dadosJSON {
-  padding: 1rem;
-  background-color: #121212;
-  color: #fff;
-  font-family: "IBM Plex Mono", monospace;
-  border-radius: 4px;
-  margin-bottom: 2rem;
-  overflow: auto;
-}
-
 .form-control {
   background-color: transparent;
   color: #fff;
@@ -79,6 +69,16 @@ a {
   border: none;
   border-bottom: 2px solid #bb86fc;
   border-radius: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2px;
 }
 
+.dadosJSON {
+  padding: 1rem;
+  width: 100%;
+  background-color: #121212;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  overflow: auto;
+}
