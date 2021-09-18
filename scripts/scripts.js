@@ -71,3 +71,23 @@ function pesquisacep(valor) {
     limpa_formulário_cep();
   }
 }
+
+// Máscara CPF
+$(document).ready(function(){
+  $("#cpf").mask("999.999.999-99");
+});
+
+// Máscara Telefone
+$(document).ready(function(){
+  $("#telefone").mask("(99) 9999-9999");
+});
+
+// Máscara Celular
+$(document).ready(function(){
+  $("#celular").mask("(99) 99999-9999");
+});
+
+// Máscara CEP
+$(document).ready(function(){
+  $("#cep").mask("99.999-999");
+});
