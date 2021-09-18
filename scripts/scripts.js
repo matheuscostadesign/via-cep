@@ -1,7 +1,6 @@
 // Retornando JSON
 document.getElementById("buscarCEP").addEventListener("click", () => {
   const cep = document.getElementById("cep").value;
-
   fetch(`https://viacep.com.br/ws/${cep}/json/`)
     .then((data) => data.json())
     .then((data) => {
@@ -17,7 +16,6 @@ function limpa_formulário_cep() {
   document.getElementById("bairro").value = "";
   document.getElementById("cidade").value = "";
   document.getElementById("uf").value = "";
-  document.getElementById("ibge").value = "";
   document.getElementById("cep").focus();
 }
 
@@ -28,7 +26,6 @@ function meu_callback(conteudo) {
     document.getElementById("bairro").value = conteudo.bairro;
     document.getElementById("cidade").value = conteudo.localidade;
     document.getElementById("uf").value = conteudo.uf;
-    document.getElementById("ibge").value = conteudo.ibge;
   } //end if.
   else {
     //CEP não Encontrado.
@@ -53,7 +50,6 @@ function pesquisacep(valor) {
       document.getElementById("bairro").value = "...";
       document.getElementById("cidade").value = "...";
       document.getElementById("uf").value = "...";
-      document.getElementById("ibge").value = "...";
 
       //Cria um elemento javascript.
       var script = document.createElement("script");

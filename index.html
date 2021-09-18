@@ -20,29 +20,65 @@
     <br>
     <div class="row">
       <div class="col-6">
-        <label for="nome">Como você se chama?</label>
-        <input type="text" id="nome" ng-model="nomePessoa" placeholder="Digite seu nome" class="form-control"><br>
-        <label for="cep">Qual é o seu CEP? </label><small> (sem pontos ou traços)</small>
-        <input name="cep" placeholder="Digite seu CEP" id="cep" type="text" class="form-control" value="" size="10"
+        <!-- <form action=""> -->
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Ex: Matheus Costa dos Santos" class="form-control"><br>
+        <label for="nome">CPF</label>
+        <input type="text" id="nome" placeholder="Ex: 460.XXX.XXX-30" class="form-control"><br>
+        <label for="nome">Telefone</label>
+        <input type="text" id="nome" placeholder="Ex: (17) 3238-XXXX" class="form-control"><br>
+        <label for="nome">Celular/Whatsapp</label>
+        <input type="text" id="nome" placeholder="Ex: (17) 99214-3072" class="form-control"><br>
+        <label for="cep">Digite o CEP</label><small class="pl-1">(sem pontos ou traços)</small>
+        <input name="cep" placeholder="Ex: 15081520" id="cep" type="text" class="form-control" value="" size="10"
           required maxlength="9" onblur="pesquisacep(this.value);"><br>
-        <button id="buscarCEP" class="btn btn-default">Buscar CEP</button>
+        <!-- </form> -->
       </div>
       <div class="col-6">
         <div class="dadosAPI">
-          <label>Rua:
-            <input name="rua" type="text" id="rua" size="60" class="form-control" disabled></label>
-          <label>Bairro:
-            <input name="bairro" type="text" id="bairro" size="40" class="form-control" disabled></label>
-          <label>Cidade:
-            <input name="cidade" type="text" id="cidade" size="40" class="form-control" disabled></label>
-          <div class="uf">
-            <label>Estado:
-              <input name="uf" type="text" id="uf" size="2" class="form-control" disabled></label>
+          <div class="col-12">
+            <div class="row">
+              <label>Logradouro (Rua/Avenida):</label>
+              <input name="rua" type="text" id="rua" size="60" class="form-control" disabled>
+            </div>
+            <br>
+            <div class="row">
+              <label>Bairro:</label>
+              <input name="bairro" type="text" id="bairro" size="40" class="form-control" disabled>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-8 p-0">
+                <label>Cidade:</label>
+                <input name="cidade" type="text" id="cidade" size="40" class="form-control" disabled><br>
+              </div>
+              <div class="col-4 pr-0">
+                <label>Estado:</label>
+                <input name="uf" type="text" id="uf" size="2" class="form-control" disabled>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 p-0">
+                <label>Complemento:</label>
+                <input name="complemento" type="text" id="complemento" size="40" class="form-control pl-2"><br>
+              </div>
+              <div class="col-4 pr-0">
+                <label>Número:</label>
+                <input name="num" type="number" id="num" class="form-control pl-2">
+              </div>
+            </div>
+
           </div>
-          <label>IBGE:
-            <input name="ibge" type="text" id="ibge" size="8" class="form-control" disabled></label><br><br>
-          <h6>Retorno em JSON</h6>
         </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="row">
+        <button id="buscarCEP" class="btn btn-default">Gerar dados em JSON</button>
+      </div>
+      <br>
+      <div class="row">
         <div class="dadosJSON">
           <blockquote id="cepJSON">...</blockquote>
         </div>

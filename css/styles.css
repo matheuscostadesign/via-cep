@@ -45,10 +45,6 @@ a {
   background-color: #bb86fc;
 }
 
-.dadosAPI {
-  margin-top: 2rem;
-}
-
 .dadosAPI input {
   color: #bb86fc;
   padding-left: 0;
@@ -86,8 +82,3 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.uf {
-  display: inline-block;
-  margin-left: 2rem;
-  float: right;
-}
