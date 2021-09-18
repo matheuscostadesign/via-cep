@@ -89,5 +89,5 @@ $(document).ready(function(){
 
 // Máscara CEP
 $(document).ready(function(){
-  $("#cep").mask("99.999-999");
+  $("#cep").mask("99999-999");
 });
