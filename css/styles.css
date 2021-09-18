@@ -82,3 +82,16 @@ a {
   margin-bottom: 2rem;
   overflow: auto;
 }
+
+@media (max-width: 720px) {
+  html {
+    font-size: 85%;
+  }
+  .viacep {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .dadosAPI {
+    margin-top: 2rem;
+  }
+}
